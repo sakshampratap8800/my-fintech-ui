@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="request.css">
+  <script src="script.js"defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+  <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+         <a href="homepage.html">Home</a>
+
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <div class="request-evalue">
+    <h2>Request E-value</h2>
+    <p>Load E-value through Multiple Modes</p>
+
+
+    <div class="bank-selection">
+        <p>E-value Deposited In</p>
+        <button class="bank-button">PNB Bank</button>
+        <button class="bank-button">SBI</button>
+        <button class="bank-button">IDBI Bank Limited</button>
+        <button class="bank-button">RBL Bank Ltd</button>
+        <button class="bank-button">Union Bank of India</button>
+        <p class="required-note">⚠ (Required) Select the bank where e-value was deposited</p>
+    </div>
+
+    <div class="upload-receipt">
+        <p>Upload Receipt (optional)</p>
+        <button class="upload-button">Open Camera</button>
+        <button class="upload-button">Select File</button>
+    </div>
+
+    <div class="branch-remarks">
+        <p>Branch Name / Remarks (optional)</p>
+        <input type="text" placeholder="Enter branch name or remarks">
+    </div>
+
+    <button class="proceed-button">Proceed &RightArrow;</button>
+</div>
+
+    </div>
+   
+
+
+</body>
+</html>

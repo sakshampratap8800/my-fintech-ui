@@ -1,0 +1,232 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+:root {
+  --sidebar-width: 60px;
+  --sidebar-expanded-width: 240px;
+  --transition-duration: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  color: #333;
+}
+
+.tnav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  background-color: rgb(1, 1, 147);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.tnavlist {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tnavlogo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: #fff;
+}
+
+.tnavlogo strong {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: 1.25rem;
+}
+
+.tnavsearch {
+  position: relative;
+  margin-right: 100px;
+}
+
+.tnavsearch input {
+  height: 50px;
+  width: 250px;
+  padding: 0 15px;
+  border: 2px solid #789ff4;
+  border-radius: 30px;
+  background-color: rgb(83, 133, 241);
+  color: #fff;
+  outline: none;
+}
+::placeholder{
+  color: #fff;
+}
+.fa-circle-user{
+
+  background: rgb(83, 133, 241);
+ box-shadow: 0 0 1px 10px rgb(83, 133, 241);
+ border-radius: 30px;
+}
+
+.tnavsearch i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+}
+
+.tnavicon {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width var(--transition-duration);
+}
+
+.sidebar.expanded {
+  width: var(--sidebar-expanded-width);
+}
+
+.simenu {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sitem {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background var(--transition-duration);
+}
+
+.sitem:hover {
+  background-color: #f0f3ff;
+}
+
+.sitem i {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
+.sitem a{
+  text-decoration: none;
+  color: #000;
+}
+
+.sitem span {
+  white-space: nowrap;
+  transition: opacity var(--transition-duration);
+}
+
+.sidebar.collapsed .sitem span {
+  opacity: 0;
+}
+
+.divide {
+  height: 1px;
+  background-color: #eee;
+  margin: 8px 0;
+}
+
+.sidesec {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #888;
+  padding: 5px 15px;
+}
+
+.content {
+  margin-top: 90px;
+  margin-left: var(--sidebar-width);
+  padding: 20px;
+  transition: margin-left var(--transition-duration);
+  box-shadow: 0px 5px 2px 2px #ccc;
+}
+
+.content.shifted {
+  margin-left: var(--sidebar-expanded-width);
+}
+
+.boxed{
+  display: flex;
+  text-align: center;
+  gap: 10px;
+
+}
+.smallico i{
+  height: 40px;
+  font-size: 80px;
+  border-radius: 10px;
+}
+.smallico a{
+  text-decoration: none;
+  color:#000;
+  font-weight: 700;
+}
+.smallico p{
+  font-weight: 600;
+}
+.smallico{
+  box-shadow: 0 0 4px 4px #ccc;
+  width: 20%;
+  height: 15rem;
+  display: grid;
+  text-align: center;
+}
+.wallet-icon          
+{ color: #2d79f3; 
+
+}
+.home-icon            
+{ color: #b74b4b; 
+}
+.refer-icon           
+{ color: #5c6470; 
+}
+.evalue-load-icon     
+{ color: #bb66db; 
+}
+.evalue-request-icon  
+{ color: #5b6fcf;
+ }
+.evalue-transfer-icon 
+{ color: #5dbbff; 
+}
+.money-icon          
+ { color: #f9b846; 
+}
+.aeps-icon            
+{ color: #f77e6f; 
+}
+.recharge-icon        
+
+{ color: #4bbf4b; 
+}
+.lic-icon             
+{ color: #60c7e9; 
+}
+.manage-icon         
+ { color: #999;   
+}
+.history-icon        
+ { color: #a17ed6; 
+}

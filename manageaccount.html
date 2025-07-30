@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="recharge.css">
+  <script src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+ <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+         <a href="homepage.html">Home</a>
+
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <h1 style="font-weight: 100; margin-left: 30px;">Manage My Account</h1>
+    <div class="payment-grid">
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=H6oPm9v5Ilx6&format=png&color=000000" alt="Load E-value">
+    <h3>Load E-value</h3>
+    <p>Load value using various modes like from distributors, UPI, Card, Net...</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=FkqjAX6ZGe4B&format=png&color=000000" alt="Sign Agreement">
+    <h3>Sign Agreement</h3>
+    <p>Agreement sign off to start doing business</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=13731&format=png&color=000000" alt="Promote Business">
+    <h3>Promote Business</h3>
+    <p>Add your message to customer receipt</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=23493&format=png&color=000000" alt="My Distributor">
+    <h3>My Distributor</h3>
+    <p>Choose from list and search any distributor will serve you</p>
+  </div>
+</div>
+
+<div class="payment-grid">
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=3JwpuVZyFOSr&format=png&color=000000" alt="E-Invoice / GST">
+    <h3>E-Invoice / GST</h3>
+    <p>View, download and approve invoices plus add your GST number</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=KrsKks5Gg6Uz&format=png&color=000000" alt="Reset PIN">
+    <h3>Reset PIN</h3>
+    <p>Forgot your PIN? Reset using your registered PAN</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=KrsKks5Gg6Uz&format=png&color=000000" alt="Use Secret Pin">
+    <h3>Use Secret Pin</h3>
+    <p>Toggle between Secret PIN and PinTwin</p>
+  </div>
+
+  <div class="payment-card">
+      <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/fingerprint.png" alt="fingerprint"/>
+    <h3>Change AePS Device</h3>
+    <p>You can update your new AePS device</p>
+  </div>
+</div>
+
+<div class="payment-grid">
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=TqsKL58VfNRg&format=png&color=000000" alt="Do AePS KYC">
+    <h3>Do AePS KYC</h3>
+    <p>Do AePS KYC for seamless transaction</p>
+  </div>
+
+  <div class="payment-card">
+    <img src="https://img.icons8.com/?size=100&id=WV326xpsBMyb&format=png&color=000000" alt="Change Registered Mobile Number">
+    <h3>Change Registered Mobile Number</h3>
+    <p>Update your registered mobile number</p>
+  </div>
+</div>
+</div>
+    
+
+</div>
+
+
+
+</body>
+</html>

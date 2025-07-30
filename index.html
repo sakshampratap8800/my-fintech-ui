@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="homepage.css">
+  <script src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+  <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <span style="margin-left: auto;"> &#8377 25000.00</span>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+         <a href="homepage.html">Home</a>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <div class="dash">
+     <p class="name"> Welcome, Saksham</p>
+      <span>My Profile</span>
+      <span><i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>&#8377 25000</span>
+         <i class="bx bx-plus"></i>
+      </span>
+      <p class="settings">
+         <i class="fa-solid fa-gear manage-icon"></i>
+      </p>
+    </div>
+    <div class="flexused">
+       <div class="summary">
+      <h3>Earning Summary</h3>
+      <div class="mts">
+        <div class="mtss"><span>
+          This month till Yesterday
+        </span>
+          <span class="zero">&#8377 0</span>
+        </div>
+       <div class="mtss"><span>
+          Last month till Yesterday
+        </span>
+          <span class="zero">&#8377 0</span>
+        </div>
+        <div class="mtss"><span>
+        Last Month Earning
+        </span>
+          <span class="zero">&#8377 0</span>
+        </div>
+       <div class="mtss"><span>
+          Commission Due
+        </span>
+          <span class="zero">&#8377 0</span>
+        </div>
+      </div>
+      <div class="btn">
+      <button type="button">View Details</button>
+      <button type="button">Refund Status: &#8377 0</button>
+      </div>
+    </div>
+    <div class="donxt">
+      <div class="titl">
+       <h2>To Do Next</h2>
+      </div>
+      <div class="iconsofdesk">
+      <i class="fa-solid fa-wallet evalue-load-icon"></i>
+      
+        <div class="value">
+          <h3>
+            Request E-value
+          </h3>
+          <span>Request for E-value and track the Status</span>
+        </div>
+        </div>
+        <hr>
+        <div class="iconsofdesk">
+      <i class="bx bx-currency-notes money-icon"></i>
+    
+        <div class="value">
+          <h3>
+            Get Business Loan
+          </h3>
+          <span>Get loan for your business instantly</span>
+        </div>
+        </div>
+        <hr>
+        <div class="iconsofdesk">
+      <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+    
+        <div class="value">
+          <h3>
+            Ind-Nepal Transfer
+          </h3>
+          <span>Transfer money to any bank account in Nepal</span>
+        </div>
+        </div>
+        <hr>
+        <div class="iconsofdesk">
+      <i class="bx bx-print-dollar aeps-icon"></i>
+    
+        <div class="value">
+          <h3>
+            AePS Cashout
+          </h3>
+          <span>Provide cash withdrawl services using Aadhaar to your customers</span>
+        </div>
+        </div>
+        <hr>
+        <div class="iconsofdesk">
+      <i class="fa-solid fa-shop"></i>
+    
+        <div class="value">
+          <h3>
+            Shop For Products
+          </h3>
+          <span>Buy Products Online</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

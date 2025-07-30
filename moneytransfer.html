@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="moneytransfer.css">
+  <script src="script.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+ <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+         <a href="homepage.html">Home</a>
+
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <div class="header">
+      <div class="oneel">
+         <h2>Search Customer</h2>
+        <h2><button type="button">Help</button></h2>
+      </div>
+       
+        <div class="num-input">
+          <i>Customer's Mobile</i>
+          <input type="tel" name="customer-tel" id="customer-tel" maxlength="10" required>
+          <span></span>
+          <p>+91</p>
+        </div>
+        <button class="arrow-btn">Proceed &RightArrow; </button>
+    </div>
+    <div class="value-card">
+        <div class="second-card">
+      <div class="card-grid">
+        <div class="name">
+          Customer
+        </div>
+        <div class="user-phone">
+          <span>Customer's Mobile</span>
+          <input type="tel" name="" id="">
+        </div>
+        <div class="cardofkyc">
+         <i class="fa-solid fa-address-card"></i> Non KYC
+        </div>
+
+        <div class="noname"></div>
+       
+        
+      </div>
+      <div class="details-of"><strong>
+        Recipient Details
+      </strong></div>
+      <div class="details-card">
+        <span>        Select a recipient to send money</span>
+      </div>
+      <div class="list-menu">
+        <div class="head">
+          <strong></strong>
+          <strong>Recipient</strong>
+          <strong>Bank Account / Aadhaar</strong>
+          <strong>Bank</strong>
+        </div>
+        <div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">Ravi Tech Solutions</a>
+  <span>1234 5678 9012</span>
+  <span>ICICI Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">NextGen Infotech</a>
+  <span>9876 5432 1098</span>
+  <span>HDFC Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">Bright Future Pvt Ltd</a>
+  <span>4567 8901 2345</span>
+  <span>Axis Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">Elite Systems</a>
+  <span>1122 3344 5566</span>
+  <span>Punjab National Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">Zenith Tech</a>
+  <span>6677 8899 0011</span>
+  <span>Canara Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">FutureSoft Inc.</a>
+  <span>2211 4433 6655</span>
+  <span>Bank of Baroda</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">CodeWave Solutions</a>
+  <span>3344 5566 7788</span>
+  <span>Kotak Mahindra Bank</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">PixelEdge Pvt Ltd</a>
+  <span>9988 7766 5544</span>
+  <span>Union Bank of India</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">SoftGlow Systems</a>
+  <span>1230 4560 7890</span>
+  <span>State Bank of India</span>
+</div>
+
+<div class="all-list">
+  <p>&SmallCircle;&SmallCircle;&SmallCircle;</p>
+  <a href="#">InnoTech Corp</a>
+  <span>5432 1098 7654</span>
+  <span>IDFC First Bank</span>
+</div>
+
+
+      </div>
+      <div class="payment">
+        <strong>Money Transfer</strong>
+        <div class="input-val">
+          <p> Amount</p>
+           <i>&#8377</i>
+          <input type="tel" name="Amount" id="amount">
+         
+        </div>
+       
+
+        <div class="sg-val">
+          <p>Suggested Values</p>
+          <button type="button">5000</button>
+          <button type="button">10000</button>
+          <button type="button">20000</button>
+        
+        </div>
+        <div class="choose-mode">
+          <button>IMPS</button>
+        <button>NEFT</button>
+        </div>
+        
+        <p><button class="process">Proceed &rightarrow;</button></p>
+      </div>
+            <div class="payment">
+        <strong>Verify OTP and PIN</strong>
+        <div class="input-val">
+          <p> OTP</p>
+           <i>&#8377</i>
+          <input type="tel" name="Amount" id="amount">
+        </div>
+        <div class="input-val">
+          <p> PIN</p>
+           <i class="fa-solid fa-key"></i>
+          <input type="tel" maxlength="6" name="Amount" id="amount">
+          <img width="40" height="40" src="https://img.icons8.com/color/96/security-checked--v1.png" alt="security-checked--v1"/>
+          <p>
+        </div>
+        <button class="process">Proceed &rightarrow;</button></p>
+    </div>
+    </div>
+
+  
+
+<!-- 
+  <div class="recipient-list">
+    <h3>Recipient Details</h3>
+    <ul>
+<li>Ravi Tech Solutions – ICICI Bank<br><span>1234 5678 9012</span></li>
+<li>Sanjay Mehta – Punjab National Bank<br><span>4567 8901 2345 6789</span></li>
+<li>Neha Verma – Canara Bank<br><span>7890 1234 5678 9</span></li>
+<li>Rakesh Sharma – HDFC Bank<br><span>2345 6789 0123 45</span></li>
+<li>Pooja Singh – Bank of Baroda<br><span>9876 5432 1098 76</span></li>
+<li>Miss Kavita Jain – Central Bank of India<br><span>1122 3344 55</span></li>
+<li>Mrs Rekha Das – State Bank of India<br><span>6677 8899 000</span></li>
+<li>Mrs Tina Kapoor – State Bank of India<br><span>5566 7788 999</span></li>
+<li>Miss Riya Sen – State Bank of India<br><span>9988 7766 554</span></li>
+<li>Ajay Mishra – Indian Bank<br><span>4433 2211 00</span></li>
+
+    </ul>
+    <button class="add-recipient">➕ Add Recipient</button>
+  </div>
+</div>  -->
+
+
+  </div>
+
+
+</body>
+</html>

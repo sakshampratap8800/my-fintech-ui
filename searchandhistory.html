@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="searchandhistory.css">
+  <script src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+ <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+        <a href="homepage.html">Home</a>
+
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <div class="history-container">
+  <div class="history-header">
+    <h2>History</h2>
+    <p>As of: <strong>30 Jul (Today) 9:12 AM</strong></p>
+  </div>
+
+  <div class="tab-bar">
+    <button class="active">All</button>
+    <button>Fund Settlement</button>
+    <button>Deposit</button>
+    <button>Pay with Card</button>
+    <button>Money Transfer</button>
+    <button>Indo-Nepal</button>
+    <button>Account Verification</button>
+    <button>DMT High limit</button>
+    <button>AePS</button>
+  </div>
+
+
+  <div class="date-row">21 January 2025 (Thursday)</div>
+  <div class="transaction-row">
+    <div>12:33 PM</div>
+    <div class="description">Subscription Renewal <small>Specialist Plan Subscription Fees</small></div>
+    <div class="amount">₹116.82</div>
+    <div>–</div>
+    <div>–</div>
+    <div>₹26.71</div>
+    <div>3180368707</div>
+  </div>
+
+  <div class="date-row">22 January 2025 (Wednesday)</div>
+  <div class="transaction-row">
+    <div>8:33 PM</div>
+    <div class="description">Money Remittance <small>Sagar Mobile +918851394721 A/C:5153101001633 Canara Bank</small></div>
+    <div class="amount red">- ₹1,000.00</div>
+    <div>₹10.25</div>
+    <div>₹3.50</div>
+    <div>₹143.53</div>
+    <div>3180212157</div>
+  </div>
+
+  <div class="transaction-row">
+    <div>8:14 PM</div>
+    <div class="description">Money Remittance <small>Shekhar +918802639114 A/C:8851010001692 Bank Of Baroda</small></div>
+    <div class="amount red">- ₹3,000.00</div>
+    <div>₹30.25</div>
+    <div>₹19.20</div>
+    <div>₹1,150.45</div>
+    <div>3180204549</div>
+  </div>
+
+<div class="transaction-row">
+  <div>4:20 PM</div>
+  <div class="description">Money Remittance <small>Ravi Kumar +919812345678 A/C:6543010023456 HDFC Bank</small></div>
+  <div class="amount red">- ₹2,500.00</div>
+  <div>₹20.00</div>
+  <div>₹8.00</div>
+  <div>₹980.25</div>
+  <div>3180356789</div>
+</div>
+
+<div class="transaction-row">
+  <div>3:05 PM</div>
+  <div class="description">Money Remittance <small>Anjali Sharma +919876543210 A/C:789010123456 ICICI Bank</small></div>
+  <div class="amount red">- ₹1,800.00</div>
+  <div>₹18.50</div>
+  <div>₹5.50</div>
+  <div>₹456.75</div>
+  <div>3180345672</div>
+</div>
+
+<div class="transaction-row">
+  <div>11:15 AM</div>
+  <div class="description">Subscription Renewal <small>Premium Plan Auto-Renew</small></div>
+  <div class="amount">₹199.00</div>
+  <div>–</div>
+  <div>–</div>
+  <div>₹257.00</div>
+  <div>3180333344</div>
+</div>
+  <div class="date-row">26 july 2025 (Wednesday)</div>
+<div class="transaction-row">
+  <div>9:30 AM</div>
+  <div class="description">Money Remittance <small>Deepak Joshi +917894561234 A/C:50210100123456 Axis Bank</small></div>
+  <div class="amount red">- ₹750.00</div>
+  <div>₹7.50</div>
+  <div>₹2.00</div>
+  <div>₹500.00</div>
+  <div>3180321122</div>
+</div>
+
+<div class="transaction-row">
+  <div>7:45 AM</div>
+  <div class="description">Money Remittance <small>Nisha Verma +918765432109 A/C:40501001234567 SBI</small></div>
+  <div class="amount red">- ₹3,600.00</div>
+  <div>₹25.00</div>
+  <div>₹11.50</div>
+  <div>₹2,300.55</div>
+  <div>3180309876</div>
+</div>
+
+<div class="transaction-row">
+  <div>6:10 AM</div>
+  <div class="description">Wallet Top-Up <small>Self recharge via UPI</small></div>
+  <div class="amount green">+ ₹5,000.00</div>
+  <div>–</div>
+  <div>–</div>
+  <div>₹7,300.00</div>
+  <div>3180298765</div>
+</div>
+
+
+</div>
+
+  </div>
+
+
+</body>
+</html>

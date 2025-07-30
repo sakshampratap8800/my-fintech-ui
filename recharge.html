@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="recharge.css">
+  <script src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./free/free/fonts/basic/boxicons.min.css">
+</head>
+<body>
+  <nav class="tnav">
+    <ul class="tnavlist">
+      <li class="tnavlogo">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <strong>SGC</strong>
+      </li>
+      <li class="tnavsearch">
+        <input type="search" placeholder="Search Transactions" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="tnavicon"><i class="fa-solid fa-bell"></i></li>
+      <li class="tnavicon">
+        <a href="logout.html"><i style="color: #fff;font-size: 30px;" class="fa-solid fa-circle-user"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar collapsed" id="sidebar">
+
+    <ul class="simenu">
+      <li class="sitem sitem--icon">
+        <i class="fa-solid fa-wallet wallet-icon"></i>
+        <i class="bx bx-plus"></i>
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-house home-icon"></i>
+        <a href="homepage.html">Home</a>
+
+      </li>
+      <li class="sitem">
+        <i class="fa-solid fa-people-group refer-icon"></i>
+        <span>Refer</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">E‑value</li>
+      <li class="sitem">  
+        <a href="loadevalue.html">
+          <i class="fa-solid fa-wallet evalue-load-icon"></i>
+        <span>Load E‑value</span>
+        </a>
+         
+
+
+      </li>
+      <li class="sitem">
+      <a href="loadevalue.html">
+        <i class="bx bx-currency-note evalue-request-icon"></i>
+        <span>Own Bank Transfer</span>
+      </a>
+      </li>
+      <li class="sitem">
+        <a href="request.html">
+           <i class="bx bx-currency-notes evalue-transfer-icon"></i>
+        <span>Request E‑value</span>
+        </a>
+       
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Payment</li>
+      <li class="sitem">
+        <a href="moneytransfer.html">
+          <i class="fa-solid fa-money-bill-transfer money-icon"></i>
+        <span>Money Transfer</span>
+        </a>
+        
+      </li>
+      <li class="sitem">
+        <i class="bx bx-print-dollar aeps-icon"></i>
+        <span>AePS Cashout</span>
+      </li>
+      <li class="divide"></li>
+      <li class="sidesec">Utility</li>
+      <li class="sitem">
+        <a href="recharge.html">
+          <i class="fa-solid fa-mobile-screen recharge-icon"></i>
+        <span>Recharge & Bill</span>
+      </li>
+        </a>
+        
+      <li class="sitem">
+        <i class="bx bx-credit-card-alt lic-icon"></i>
+        <span>Lic Bill Payment</span>
+      </li>
+      <li class="sitem">
+        <a href="manageaccount.html">
+           <i class="fa-solid fa-gear manage-icon"></i>
+        <span>Manage Account</span>
+        </a>
+       
+      </li>
+      <li class="sidebar__divider"></li>
+      <li class="sitem">
+        <a href="searchandhistory.html">
+        <i class="fa-solid fa-arrows-rotate history-icon"></i>
+        <span>Search & History</span>
+      </li>
+        </a>
+    </ul>
+  </div>
+  <div class="content" id="main">
+    <h1 style="font-weight: 100; margin-left: 30px;">Recharge and bill payment</h1>
+     <div class="payment-grid">
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=H6oPm9v5Ilx6&format=png&color=000000" alt="Airtel CMS">
+        <h3>Airtel CMS</h3>
+        <p>Make payment for hundreds with Airtel's CMS.</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://i.pinimg.com/1200x/f1/c5/d9/f1c5d90320c50a8d3399282c6e5581f6.jpg" alt="LIC Bill Payment">
+        <h3>LIC Bill Payment</h3>
+        <p>Pay your LIC Premium Instantly.</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=53983&format=png&color=000000" alt="Datacard">
+        <h3>Datacard</h3>
+        <p>Pay your datacard bill instantly.</p>
+    </div>
+     <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=1429&format=png&color=000000" alt="Airtel CMS">
+        <h3>Credit Card bill Payment</h3>
+        <p>pay your credit card bills</p>
+    </div>
+    </div>
+     <div class="payment-grid">
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=87212&format=png&color=000000" alt="Airtel CMS">
+        <h3>Mobile Prepaid</h3>
+        <p>Pay your any prepaid sim bill</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=L9ByuHGgbUNK&format=png&color=000000" alt="LIC Bill Payment">
+        <h3>Mobile Postpaid</h3>
+        <p>Pay your any postpaid sim bill</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=115370&format=png&color=000000" alt="Datacard">
+        <h3>DTH TV</h3>
+        <p>Pay your datacard bill instantly.</p>
+    </div>
+     <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=LWGYr2qYDgJS&format=png&color=000000" alt="Airtel CMS">
+        <h3>GAS</h3>
+        <p>Gas bill payment</p>
+    </div>
+    </div>
+     <div class="payment-grid">
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=dvZnjC1SVTyx&format=png&color=000000" alt="Airtel CMS">
+        <h3>Broadband Postpaid</h3>
+        <p>enjoy unlimited bill payment</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=mpkjcEZEyYpL&format=png&color=000000" alt="LIC Bill Payment">
+        <h3>Electricity</h3>
+        <p>Electricity bill payment</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=rBh1fuOC6Bjx&format=png&color=000000" alt="Datacard">
+        <h3>Hospital</h3>
+        <p>Medical Expenses Bill Payment</p>
+    </div>
+     <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=tNcJ7GGjHsUq&format=png&color=000000" alt="Airtel CMS">
+        <h3>House Tax</h3>
+        <p>Easy House Tax Payment</p>
+    </div>
+    </div>
+     <div class="payment-grid">
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=5jXGMB8OxZYa&format=png&color=000000" alt="Airtel CMS">
+        <h3>Fastag</h3>
+        <p>Recharge Your fastag</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=dccAxNCEIQ3s&format=png&color=000000" alt="LIC Bill Payment">
+        <h3>Rental Payments</h3>
+        <p>unlimited entertainment subscription payment</p>
+    </div>
+
+    <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=jWPjQhx0oPhE&format=png&color=000000" alt="Datacard">
+        <h3>Education</h3>
+        <p>Education fee payment</p>
+    </div>
+     <div class="payment-card">
+        <img src="https://img.icons8.com/?size=100&id=16231&format=png&color=000000" alt="Airtel CMS">
+        <h3>Insurance</h3>
+        <p>Life insurance premium and renewal payment</p>
+    </div>
+    </div>
+    
+
+</div>
+
+
+
+</body>
+</html>
